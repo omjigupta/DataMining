@@ -200,8 +200,8 @@ int main()
 		n++;
 	}
 	
-    ifstream is(db);
-    getline(is,line1);
+   	 ifstream is(db);
+   	 getline(is,line1);
     
 	while(line1[i]!='\0')							
 		{
@@ -243,7 +243,7 @@ int main()
     	cout<<endl;
 	}*/
 	cout<<endl;
-    cout<<"\n\n no of attributes in d_set:"<<d+1<<endl;
+        cout<<"\n\n no of attributes in d_set:"<<d+1<<endl;
 	cout<<"\n\n no of instances d_set:"<<n-1;
 
 	int dom[d+1],flag=0;					
@@ -266,11 +266,9 @@ int main()
 	}
 	
 
-    test_sz=(n-1)/4;
+   	 test_sz=(n-1)/4;
 	training_sz=(n-1)-test_sz;
 	nv(Data,test_sz,training_sz,dom,n-1,d+1);
 	return 0;
 	getch();
-	getch();
-
 }
